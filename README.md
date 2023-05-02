@@ -13,8 +13,8 @@ If you would like to make changes to the source, simply clone the repo and open 
 For Linux, grab the *embedder.c* and *Makefile* files. Ensure you have *make* installed and run ***make all***, then run the output binary.
 
 ### Using the output file
- Create a header file and include all the functions in your output .c file. Name the header file the same name and place both in the build path of your project.
- ex.
+ Create a header file and include the functions below. Name the header file the same as your .c file and place both in the build path of your project, then include the .h file in the code you wish to use the embedded file in.
+ #### ex.
  __Content of header__
 ```C
 #pragma once
