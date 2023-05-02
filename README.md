@@ -13,4 +13,11 @@ If you would like to make changes to the source, simply clone the repo and open 
 For Linux, grab the *embedder.c* and *Makefile* files. Ensure you have *make* installed and run ***make all***, then run the output binary.
 
 ### Using the output file
- __WIP__
+ Create a header file and include all the functions in your output .c file. Name the header file the same name and place both in the build path of your project.
+ ex.
+ __Content of header__
+```C
+#pragma once
+const char* grab_file(const char* name, size_t* size);
+int rebuild_file(const char* d, size_t size);
+```
